@@ -1,0 +1,311 @@
+*{ 
+    margin: 0%; 
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.bg1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  
+    height: 100vh; 
+    z-index: -1;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  
+    height: 100vh; 
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/naturebg.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    z-index: 1;
+    background-color: #173832;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+    box-shadow: 1px 4px 16px 1px rgba(0,0,0,0.75);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    gap: 100px;
+    font-weight: bold;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #cec9ba;
+    font-size: 1rem;
+    transition: color 0.3s ease-in, text-shadow 0.35s ease-in;
+}
+
+.nav-links a:hover{
+    color: #0c7723;
+    text-shadow: 4px 1px 4px rgba(0,0,0,0.6);
+}
+
+.logo-brand{
+    width: 4rem;
+}
+
+.villain{
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.villain-content h1{
+    font-size: 70px;
+    color: #cec9ba;
+}
+
+.villain-content p{
+    color: #cec9ba;
+}
+
+.picks{
+    background-color: #cec9ba;
+    padding: 40px 20% 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.picks h1{
+    color: #173832;
+    font-size: 2.2rem;
+}
+
+.btn-pick{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px 12px;
+    border-radius: 35px;
+    border: 1px solid;
+    border-color: #173832;
+    background-color: #173832;
+    color: #cec9ba;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.btn-pick:hover{
+    background-color: #cec9ba;
+    color: #173832;
+}
+
+.popular{
+    display: flex;
+    justify-content: space-between;
+    background-color: #cec9ba;
+    padding: 0px 20%;
+}
+
+.hot-articles{
+    padding-bottom: 60px;
+}
+
+.hot-img{
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.hot-img:hover{
+    transform: translateY(-7px);
+    border-radius: 10px;
+    box-shadow: -6px 11px 28px 2px rgba(0,0,0,0.75);
+}
+
+.provide{
+    background-color: #237e46;
+    padding: 30px 20% 0px;
+}
+
+.provide h1{
+    color: #cec9ba; 
+    font-size: 2rem;
+}
+
+.cards {
+    width: 100%;
+    background-color: #237e46;
+    padding: 30px 20% 60px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #095330;
+    border-radius: 16px;
+    padding: 30px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-informative {
+    border-left: 5px solid #173832; 
+}
+
+.card-thought {
+    border-left: 5px solid #173832; 
+}
+
+.card-unknown {
+    border-left: 5px solid #173832; 
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.card-header h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.card p {
+    color: #aebfb8; 
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    flex-grow: 1; 
+}
+
+.line {
+  width: 100%; 
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #d8d8d8;
+}
+
+.site-footer {
+    box-shadow: 1px -6px 28px 0px rgba(255,241,241,0.75);
+    background-color: #1b4332; 
+    color: #ffffff;
+    padding: 60px 0 30px 0;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #2a5a43;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 0px 450px;
+    display: flex; 
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 220px; 
+}   
+
+.footer-email {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.footer-email:hover {
+    color: #1fc40a; 
+    text-decoration: underline; 
+}
+.footer-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-text {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tax-box {
+    border-top: 1px solid #4f772d;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.subscribe-form input {
+    width: 130px;
+    padding: 8px;
+    border: 1px solid #84f08a;
+    outline: none;
+}
+
+.subscribe-form button {
+    background-color: #4f772d;
+    color: #6dd47f;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subscribe-form button:hover {
+    background-color: #132a13;
+}
+
+.footer-bottom {
+    width: 1000px;
+    margin: 40px auto 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #4f772d;
+    text-align: center;
+}
+
+.copyright-text {
+    font-size: 12px;
+    color: #cccccc;
+}
